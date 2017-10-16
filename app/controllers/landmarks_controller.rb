@@ -20,7 +20,8 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks/:id' do
-    "Hello World"
+    @landmark = Landmark.create(params['landmark'])
+    redirect to "/landmarks/#{@landmark.id }"
   end
 
 end
