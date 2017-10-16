@@ -24,6 +24,8 @@ class FiguresController < ApplicationController
   end
 
   get '/figures/:id' do
+    @figure = Post.find_by_id(params[:id])
+  erb :show
   end
 
 end
