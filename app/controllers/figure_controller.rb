@@ -13,7 +13,6 @@ class FiguresController < ApplicationController
     require 'pry'
     puts params
     @figures = Figure.create(params[:figure])
-    binding.pry
   end
 
 end
