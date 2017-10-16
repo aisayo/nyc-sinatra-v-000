@@ -10,8 +10,8 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks/:id' do
-    @landmark = Post.find_by_id(params[:id])
-    erb :show
+    @landmark = Landmark.find_by_id(params[:id])
+    erb :'landmarks/show'
   end
 
 end
