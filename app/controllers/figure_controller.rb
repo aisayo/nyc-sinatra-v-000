@@ -1,10 +1,5 @@
 class FiguresController < ApplicationController
 
-  get '/figures' do
-    @figures = Figure.all
-    erb :'figures/figureslist'
-  end
-
   get '/figures/new' do
     erb :'figures/new'
   end
@@ -21,6 +16,11 @@ class FiguresController < ApplicationController
     end
     @figure.save
     #binding.pry
+  end
+
+  get '/figures' do
+    @figures = Figure.all
+    erb :'figures/figureslist'
   end
 
 end
