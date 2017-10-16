@@ -3,6 +3,6 @@
 <form action="/landmarks/<%= @landmark.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <b>Edit Name:</b><input type="text" name="landmark[name]">
-  <input type="text" name="landmark[year_completed]">
+  <b>Edit Year Completed</b><input type="text" name="landmark[year_completed]">
   <input type="submit" value="submit">
 </form>
