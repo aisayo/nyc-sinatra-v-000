@@ -13,7 +13,7 @@ class FiguresController < ApplicationController
     require 'pry'
     puts params
     @figure = Figure.create(params[:figure])
-    @figure.name = params[:name]
+    @figure.name = params[:figure][:name]
     binding.pry
     @figure.save
   end
