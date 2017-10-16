@@ -16,6 +16,7 @@ class FiguresController < ApplicationController
     @figure.landmarks = Landmark.create(params["landmark"])
     end
     @figure.save
+    binding.pry
   end
 
 end
