@@ -5,7 +5,6 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    #binding.pry
     puts params
     @figure = Figure.create(params[:figure])
     if !params["landmark"]["name"].empty?
@@ -15,7 +14,6 @@ class FiguresController < ApplicationController
       @figure.titles << Title.create(params["title"])
     end
     @figure.save
-    #binding.pry
   end
 
   get '/figures' do
