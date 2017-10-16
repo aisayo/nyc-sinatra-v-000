@@ -1,7 +1,7 @@
 <center><h1>Edit a Figure:</h1>
   <form action="/figures/<%= @figure.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
-  Edit Name:<input type="text" name="figure[name]">
+  <h3>Edit Name:</h3> <input type="text" name="figure[name]">
   <input type="text" name="content">
   <input type="submit" value="submit">
 </form>
