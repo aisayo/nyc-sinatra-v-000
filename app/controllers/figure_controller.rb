@@ -33,4 +33,8 @@ class FiguresController < ApplicationController
     erb :'figures/edit'
   end
 
+  post '/figures/1' do
+    "Hello World"
+  end
+
 end
