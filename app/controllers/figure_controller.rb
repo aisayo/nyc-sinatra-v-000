@@ -15,7 +15,7 @@ class FiguresController < ApplicationController
     @figure = Figure.create(params[:figure])
     @figure.name = params[:name]
     binding.pry
-    @figures.save
+    @figure.save
   end
 
 end
