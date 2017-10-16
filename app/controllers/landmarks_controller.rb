@@ -20,7 +20,7 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks/:id' do
-    @landmark = Landmark.update(params['landmark'])
+    @landmark.update(params['landmark'])
     redirect "/landmarks/#{@landmark.id}"
   end
 
