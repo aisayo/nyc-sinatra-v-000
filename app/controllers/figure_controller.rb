@@ -12,6 +12,7 @@ class FiguresController < ApplicationController
   post '/figures' do
     puts params
     @figures = Figure.create(params['figure'])
+    binding.pry
   end
 
 end
