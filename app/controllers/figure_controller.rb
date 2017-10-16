@@ -12,7 +12,7 @@ class FiguresController < ApplicationController
   post '/figures' do
     puts params
     binding.pry
-    @figures = Figure.create(:name => params[:id])
+    @figures = Figure.create(params['figure'])
   end
 
 end
