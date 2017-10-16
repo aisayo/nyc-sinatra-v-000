@@ -13,7 +13,7 @@ class FiguresController < ApplicationController
     puts params
     @figure = Figure.create(params[:figure])
     if !params["landmark"]["name"].empty?
-    @figure.landmark = Landmark.create(name: params["landmark"])
+    @figure.landmarks = Landmark.create(name: params["landmark"])
     end
     @figure.save
   end
