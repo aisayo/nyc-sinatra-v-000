@@ -12,7 +12,6 @@ class FiguresController < ApplicationController
   post '/figures' do
     puts params
     @figures = Figure.create(:name => params[:id])
-    @figures.save
   end
 
 end
