@@ -13,7 +13,7 @@
 
     <b>Existing Landmarks:</b><br>
     <%Landmark.all.each do |l|%>
-    <input type="checkbox" name="figure[landmark_ids][]" value="<%=l.id%>" id="<%=l.id%>"><%=l.name%></input><br>
+    <input type="checkbox" name="figure[landmark_ids][]" value="landmark_<%=l.id%>" id="<%=l.id%>"><%=l.name%></input><br>
     <%end%>
     <br>
     <br>
