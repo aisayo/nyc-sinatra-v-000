@@ -19,4 +19,8 @@ class LandmarksController < ApplicationController
     erb :'/landmarks/edit'
   end
 
+  post '/landmarks/1' do
+    "Hello World"
+  end
+
 end
