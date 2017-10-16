@@ -37,7 +37,6 @@ class FiguresController < ApplicationController
     @figure = Figure.find_by_id(params[:id])
     @figure.name = params[:name]
 
-    "Hello World"
   end
 
 end
