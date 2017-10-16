@@ -10,7 +10,7 @@ class Figure <ActiveRecord::Base
   def self.find_by_slug(slug)
     match = ""
 
-    self.all.each do |artist|
+    self.all.each do |figure|
       if artist.slug == slug
          match = artist
       end
