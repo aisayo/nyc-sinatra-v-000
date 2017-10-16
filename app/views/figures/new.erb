@@ -3,7 +3,7 @@
     <b>Figure Name:</b> <input type="text" name="figure[name]" id="figure_name"><br>
     <br>
     <br>
-    <b>Existing Titles:</b>
+    <b>Existing Titles:</b><br>
     <% Title.all.each do |t| %>
     <input type="checkbox" name="figure[title_ids][]" id="title_<%= t.id %>" value="<%=t.id%>"><%=t.name%><br>
     <%end%>
