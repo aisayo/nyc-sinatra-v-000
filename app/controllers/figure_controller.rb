@@ -10,7 +10,6 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    require 'pry'
     puts params
     @figure = Figure.create(params[:figure])
     @figure.save
