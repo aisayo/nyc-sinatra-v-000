@@ -19,7 +19,7 @@ class LandmarksController < ApplicationController
     erb :'/landmarks/edit'
   end
 
-  post '/landmarks/1' do
+  post '/landmarks/:id' do
     "Hello World"
   end
 
