@@ -12,7 +12,7 @@ class FiguresController < ApplicationController
   post '/figures' do
     puts params
     @figure = Figure.create(params[:figure])
-    @figure.save
+    if !params["landmark"]["name"]
   end
 
 end
