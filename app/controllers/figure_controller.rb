@@ -23,7 +23,7 @@ class FiguresController < ApplicationController
     erb :'figures/figureslist'
   end
 
-  get '/figures/:id' do 
+  get '/figures/:id' do
   end
 
 end
