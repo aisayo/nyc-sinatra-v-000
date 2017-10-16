@@ -9,4 +9,8 @@ class LandmarksController < ApplicationController
     erb :'landmarks/landmarklist'
   end
 
+  get '/landmarks/:id' do
+    
+  end
+
 end
