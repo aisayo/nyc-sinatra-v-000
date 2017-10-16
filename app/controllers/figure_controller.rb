@@ -12,7 +12,8 @@ class FiguresController < ApplicationController
   post '/figures' do
     require 'pry'
     puts params
-    @figures = Figure.create(params[:figure])
+    @figure = Figure.create(params[:figure])
+    @figu
     binding.pry
     @figures.save
   end
