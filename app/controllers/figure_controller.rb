@@ -34,6 +34,8 @@ class FiguresController < ApplicationController
   end
 
   post '/figures/:id' do
+    @figure = Figure.find_by_id(params[:id])
+
     "Hello World"
   end
 
