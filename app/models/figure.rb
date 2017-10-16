@@ -11,8 +11,8 @@ class Figure <ActiveRecord::Base
     match = ""
 
     self.all.each do |figure|
-      if artist.slug == slug
-         match = artist
+      if figure.slug == slug
+         match = figure
       end
     end
     match
