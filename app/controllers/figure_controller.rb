@@ -11,6 +11,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     puts params
+    binding.pry
     @figures = Figure.create(:name => params[:id])
   end
 
