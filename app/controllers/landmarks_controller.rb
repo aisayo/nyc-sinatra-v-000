@@ -4,7 +4,8 @@ class LandmarksController < ApplicationController
     erb :'landmarks/new'
   end
 
-  get '/landmarks' do 
+  get '/landmarks' do
+    erb :'landmarks/landmarklist'
   end
 
 end
